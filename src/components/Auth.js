@@ -1,7 +1,7 @@
+import { authSliceActions } from '../store/auth-slice';
 import classes from './Auth.module.css';
 import { useSelector, useDispatch } from "react-redux";
 
-import { authSliceActions as authAction } from '../store/app-store';
 
 const Auth = () => {
 
@@ -10,7 +10,7 @@ const Auth = () => {
 
   const loginActionHandler = (event) => {
     event.preventDefault();
-    dispatch(authAction.login());
+    dispatch(authSliceActions.login());
   }
 
   return (
