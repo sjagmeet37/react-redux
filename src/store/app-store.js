@@ -28,3 +28,6 @@ const counterSubscriber = () => {
 }
 
 store.dispatch({type : 'increment'});
+
+
+export default store;
