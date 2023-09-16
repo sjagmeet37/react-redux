@@ -8,8 +8,8 @@ const Counter = () => {
   };
 
 
-  const counter = useSelector((state) => state.counter);
-  const showCounter = useSelector((state) => state.showCounter);
+  const counter = useSelector((state) => state.counter.counter);
+  const showCounter = useSelector((state) => state.counter.showCounter);
   const dispatch = useDispatch();
 
   const onIncrementHandler = () => {
@@ -17,7 +17,7 @@ const Counter = () => {
   }
 
   const onIncreaseHandler = () => {
-    dispatch(counterActions.incrementFlex({type : 'increase', amount : 5}));
+    dispatch(counterActions.incrementFlex(5));
   }
 
   const onDecrementHandler = () => {
