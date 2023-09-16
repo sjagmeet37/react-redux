@@ -14,6 +14,10 @@ const reducer = (state = {
         return {
             counter : state.counter - 1
         }
+    } else if (action.type === 'increase') {
+        return {
+            counter : state.counter + action.amount
+        }
     }
     console.log(action)
     console.log(state)
