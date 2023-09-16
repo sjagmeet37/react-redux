@@ -27,7 +27,7 @@ const counterSlice = createSlice({
 });
 
 const authInitialState = {
-    isAuthenticated : true
+    isAuthenticated : false
 }
 
 const authSlice = createSlice({
