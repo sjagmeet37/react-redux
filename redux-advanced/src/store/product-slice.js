@@ -13,8 +13,6 @@ const productSlice = createSlice({
   reducers: {
     addItem(state, action) {},
     removeItem(state, action) {},
-    getItems(state) {},
-    getCount() {},
   },
 });
 
