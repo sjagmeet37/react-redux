@@ -12,7 +12,7 @@ const Cart = (props) => {
         {cartItems.map((item1) => {
           return (
             <CartItem
-              item={{ title: item1.name, quantity: item1.quantity, total: item1.quantity * item1.unitPrice , price: item1.unitPrice }}
+              item={{ id : item1.id, title: item1.name, quantity: item1.quantity, total: item1.quantity * item1.unitPrice , price: item1.unitPrice }}
             />
           );
         })}
